@@ -6,7 +6,7 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #d3d3d3; /* Grigio chiaro */
+    background-color: #333333; /* Grigio scuro */
     overflow: hidden; /* Nascondi le barre di scorrimento */
 }
 #container {
@@ -44,6 +44,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     pointer-events: auto; /* Permette di cliccare */
     font-size: 18px;
+    z-index: 1; /* Porta il nome dell'organulo in primo piano */
 }
 .arrow {
     position: absolute;
@@ -56,6 +57,7 @@ body {
     font-size: 18px;
     cursor: pointer;
     transition: transform 0.2s; /* Effetto hover */
+    z-index: 1; /* Porta i tasti in primo piano */
 }
 .arrow:hover {
     transform: scale(1.2); /* Ingrandisci al passaggio del mouse */
@@ -77,6 +79,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     pointer-events: auto; /* Permette di cliccare */
     font-size: 18px;
+    z-index: 1; /* Porta la descrizione in primo piano */
 }
 #author {
     position: absolute;
@@ -90,6 +93,7 @@ body {
     font-size: 18px;
     cursor: pointer;
     transition: transform 0.2s; /* Effetto hover */
+    z-index: 1; /* Porta il pulsante dell'autore in primo piano */
 }
 #author:hover {
     transform: scale(1.2); /* Ingrandisci al passaggio del mouse */
