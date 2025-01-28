@@ -126,3 +126,25 @@ body {
     cursor: pointer;
     color: white;
 }
+
+/* Media queries per dispositivi mobili */
+@media (max-width: 768px) {
+    #ui-overlay {
+        flex-direction: column;
+        justify-content: flex-end; /* Posizionamento migliore per elementi interattivi */
+    }
+    #organuloName {
+        font-size: 16px; /* Riduci il testo per dispositivi mobili */
+        bottom: 60px; /* Spazio extra per i tasti */
+    }
+    .arrow {
+        font-size: 16px; /* Riduci il testo per dispositivi mobili */
+        bottom: 60px; /* Spazio extra per altri elementi */
+    }
+    #description {
+        font-size: 16px; /* Riduci il testo per dispositivi mobili */
+    }
+    #author {
+        font-size: 16px; /* Riduci il testo per dispositivi mobili */
+    }
+}
