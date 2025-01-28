@@ -72,7 +72,7 @@ body {
 #description {
     position: absolute;
     right: 20px;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
@@ -134,13 +134,9 @@ body {
         flex-direction: column;
         justify-content: flex-end; /* Posizionamento migliore per elementi interattivi */
     }
-    #organuloName {
-        font-size: 16px; /* Riduci il testo per dispositivi mobili */
-        bottom: 60px; /* Spazio extra per i tasti */
-    }
     .arrow {
         font-size: 16px; /* Riduci il testo per dispositivi mobili */
-        bottom: 60px; /* Spazio extra per altri elementi */
+        bottom: 90px; /* Spazio extra per altri elementi */
     }
     #description {
         font-size: 16px; /* Riduci il testo per dispositivi mobili */
