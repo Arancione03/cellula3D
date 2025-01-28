@@ -1,0 +1,124 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #d3d3d3; /* Grigio chiaro */
+    overflow: hidden; /* Nascondi le barre di scorrimento */
+}
+#container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#cellula {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Assicura che occupi tutto lo spazio del contenitore */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#ui-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none; /* Permette di cliccare attraverso questo div */
+}
+#organuloName {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    pointer-events: auto; /* Permette di cliccare */
+    font-size: 18px;
+}
+.arrow {
+    position: absolute;
+    bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    pointer-events: auto; /* Permette di cliccare */
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s; /* Effetto hover */
+}
+.arrow:hover {
+    transform: scale(1.2); /* Ingrandisci al passaggio del mouse */
+}
+#arrowLeft {
+    left: 20px;
+}
+#arrowRight {
+    right: 20px;
+}
+#description {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    pointer-events: auto; /* Permette di cliccare */
+    font-size: 18px;
+}
+#author {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    pointer-events: auto; /* Permette di cliccare */
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s; /* Effetto hover */
+}
+#author:hover {
+    transform: scale(1.2); /* Ingrandisci al passaggio del mouse */
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Sfondo scuro semi-trasparente */
+    display: none; /* Nascondi l'overlay di default */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Porta l'overlay in primo piano */
+}
+.overlay-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 80%;
+}
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cellula 3D</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="cellula"></div>
+        <div id="ui-overlay">
+            <div id="organuloName">Nome dell'Organulo</div>
+            <button id="arrowLeft" class="arrow">&lt;</button>
+            <button id="arrowRight" class="arrow">&gt;</button>
+            <div id="description">Descrizione dell'Organulo</div>
+            <button id="author">©</button>
+        </div>
+        <div id="author-overlay" class="overlay">
+            <div class="overlay-content">
+                <span class="close-btn" id="close-overlay">&times;</span>
+                <p>Creato da: Jonathan</p>
+                <p>Cellula realizzata da: Lauri Purhonen</p>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
