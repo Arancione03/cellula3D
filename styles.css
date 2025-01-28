@@ -129,7 +129,7 @@ body {
 }
 
 /* Media queries per dispositivi mobili */
-@media (max-width: 768px) {
+@media (max-height: 779px) {
     #ui-overlay {
         flex-direction: column;
         justify-content: flex-end; /* Posizionamento migliore per elementi interattivi */
