@@ -83,6 +83,12 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
+// Serve per cambiare organuli
+container.addEventListener('dblclick', () => {
+    currentOrganuloIndex = (currentOrganuloIndex + 1) % organuli.length;
+    updateOrganulo();
+});
+
 // Apre la schermata autori
 document.getElementById('author').addEventListener('click', () => {
     document.getElementById('author-overlay').style.display = 'flex';
