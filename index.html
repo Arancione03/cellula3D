@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cellula 3D</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="scripts.js"></script>
 </head>
 <body>
     <div id="container">
         <div id="cellula"></div>
         <div id="ui-overlay">
-            <div id="organuloName">Nome dell'Organulo</div>
-            <button id="arrowLeft" class="arrow">&lt;</button>
-            <button id="arrowRight" class="arrow">&gt;</button>
-            <div id="description">Descrizione dell'Organulo</div>
-            <button id="author">©</button>
+            <div id="organuloName" class="text-center"></div>
+            <button id="arrowLeft" class="btn btn-primary arrow">&lt;</button>
+            <button id="arrowRight" class="btn btn-primary arrow">&gt;</button>
+            <div id="description" class="text-center"></div>
+            <button id="author" class="btn btn-light">©</button>
+            <button id="vegetal" class="btn btn-cell">vegetale</button>
+            <button id="animal" class="btn btn-cell">animale</button>
         </div>
         <div id="author-overlay" class="overlay">
             <div class="overlay-content">
@@ -27,6 +31,5 @@
             </div>
         </div>
     </div>
-    <script src="scripts.js"></script>
 </body>
 </html>
