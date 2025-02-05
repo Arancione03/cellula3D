@@ -1,32 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
     const cellule = [
-        animale = [
-            { name: 'Cellula animale', description: '1', modelPath: 'modelli/cellula.glb' },
-            { name: 'Mitocondrio', description: '2', modelPath: 'modelli/mitocondrio.glb' },
-            { name: 'Nucleolo', description: '3', modelPath: 'modelli/nucleo.glb' },
-            { name: 'Cromatina', description: '4', modelPath: 'modelli/cromatina.glb' },
-            { name: 'Involucro nucleare e ', description: '5', modelPath: 'modelli/involucro nucleare.glb' },
-            { name: 'Reticlolo endoplasmatico', description: '6', modelPath: 'modelli/RE ruvido.glb' },
-            { name: 'Apparato di golgi', description: '7', modelPath: 'modelli/apparato di golgi.glb' },
-            { name: 'Centriolo e lisosoma', description: '8', modelPath: 'modelli/centriolo e lisosoma.glb' },
-            { name: 'Citosol e citoscheletro', description: '9', modelPath: 'modelli/citosol e citoscheletro.glb' },
-            { name: 'Membrana plasmatica', description: '10', modelPath: 'modelli/membrana plasmatica.glb' },
+        [
+            { name: 'Cellula animale', description: '1', modelPath: 'modelli/animale/cellula.glb' },
+            { name: 'Mitocondrio', description: '2', modelPath: 'modelli/animale/mitocondrio.glb' },
+            { name: 'Nucleolo', description: '3', modelPath: 'modelli/animale/nucleolo.glb' },
+            { name: 'Cromatina', description: '4', modelPath: 'modelli/animale/cromatina.glb' },
+            { name: 'Involucro nucleare', description: '5', modelPath: 'modelli/animale/involucro nucleare.glb' },
+            { name: 'Reticolo endoplasmatico', description: '6', modelPath: 'modelli/animale/reticolo endoplasmatico.glb' },
+            { name: 'Apparato di golgi', description: '7', modelPath: 'modelli/animale/apparato di golgi.glb' },
+            { name: 'Centriolo e lisosoma', description: '8', modelPath: 'modelli/animale/centriolo e lisosoma.glb' },
+            { name: 'Citosol e citoscheletro', description: '9', modelPath: 'modelli/animale/citosol e citoscheletro.glb' },
+            { name: 'Membrana plasmatica', description: '10', modelPath: 'modelli/animale/membrana plasmatica.glb' },
             // Aggiungi altri organuli qui con i rispettivi percorsi e descrizioni
         ],
-        vegetale = [
-            { name: 'Cellula animale', description: '1.1', modelPath: 'modelli/cellula.glb' },
-            { name: 'Mitocondrio', description: '2.2', modelPath: 'modelli/mitocondrio.glb' },
-            { name: 'Nucleolo', description: '3.3', modelPath: 'modelli/nucleo.glb' },
-            { name: 'Cromatina', description: '4.4', modelPath: 'modelli/cromatina.glb' },
-            { name: 'Involucro nucleare e ', description: '5.5', modelPath: 'modelli/involucro nucleare.glb' },
-            { name: 'Reticlolo endoplasmatico', description: '6.6', modelPath: 'modelli/RE ruvido.glb' },
-            { name: 'Apparato di golgi', description: '7.7', modelPath: 'modelli/apparato di golgi.glb' },
-            { name: 'Centriolo e lisosoma', description: '8.8', modelPath: 'modelli/centriolo e lisosoma.glb' },
-            { name: 'Citosol e citoscheletro', description: '9.9', modelPath: 'modelli/citosol e citoscheletro.glb' },
-            { name: 'Membrana plasmatica', description: '10.10', modelPath: 'modelli/membrana plasmatica.glb' },
-            { name: 'Membrana plasmatica', description: '10.11', modelPath: 'modelli/membrana plasmatica.glb' },
+        [
+            { name: 'Cellula vegetale', description: '1', modelPath: 'modelli/vegetale/cellula.glb' },
+            { name: 'Mitocondrio', description: '2', modelPath: 'modelli/vegetale/mitocondrio.glb' },
+            { name: 'Nucleolo', description: '3', modelPath: 'modelli/vegetale/nucleolo.glb' },
+            { name: 'Cromatina', description: '4', modelPath: 'modelli/vegetale/cromatina.glb' },
+            { name: 'Involucro nucleare', description: '5', modelPath: 'modelli/vegetale/involucro nucleare.glb' },
+            { name: 'Reticolo endoplasmatico', description: '6', modelPath: 'modelli/vegetale/reticolo endoplasmatico.glb' },
+            { name: 'Apparato di golgi', description: '7', modelPath: 'modelli/vegetale/apparato di golgi.glb' },
+            { name: 'Citosol e citoscheletro', description: '9', modelPath: 'modelli/vegetale/citosol e citoscheletro.glb' },
+            { name: 'Membrana plasmatica', description: '10', modelPath: 'modelli/vegetale/membrana plasmatica.glb' },
+            { name: 'Cloroplasto', description: '11', modelPath: 'modelli/vegetale/cloroplasto.glb' },
+            { name: 'Vacuolo centrale', description: '12', modelPath: 'modelli/vegetale/vacuolo centrale.glb' },
             // Aggiungi altri organuli qui con i rispettivi percorsi e descrizioni
-        ]
+        ],
+        // Aggiungi altre cellule qui
     ];
 
     let currentCellIndex = 0;
@@ -87,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
             organuloMesh.castShadow = true;
             organuloMesh.receiveShadow = true;
             scene.add(organuloMesh);
-            camera.position.z = 5;
+            camera.position.z = 7;
             animateOrganulo(organuloMesh); // Anima il modello caricato
         });
     }
