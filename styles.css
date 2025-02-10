@@ -80,14 +80,15 @@ body {
 #description {
     position: absolute;
     right: 20px;
-    top: 45%;
+    top: 50%;
+    width: 350px;
     transform: translateY(-50%);
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     pointer-events: auto;
-    font-size: 18px;
+    font-size: 17px;
     z-index: 1;
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, opacity 0.5s ease-in-out;
     opacity: 0;
