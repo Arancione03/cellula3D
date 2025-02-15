@@ -205,10 +205,10 @@ body {
     }
     .arrow {
         font-size: 16px;
-        bottom: 90px;
+        bottom: 100px;
     }
     #description {
-        font-size: 16px;
+        font-size: 14px;
     }
     #author {
         font-size: 16px;
